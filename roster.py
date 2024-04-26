@@ -8,7 +8,7 @@ player = {"Last Name": ["Bacot", "Davis", "Cadeau", "High", "Ryan", "Trimble", "
             }
 data = pd.DataFrame(player)
 
-data["bmi"] = (data["weight"]/2.025) / ((data["height"]/39.37)**2)
+data["bmi"] = ((data["weight"]/2.025) / ((data["height"]/39.37)**2)).round(2)
 
 print(data)
 
